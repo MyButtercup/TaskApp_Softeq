@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TaskApp.Views.ForthTask"
+             Title="Task 4">
+    <StackLayout BackgroundColor="OldLace">
+        <Label Text="Введите числа M и N" FontSize="Medium" TextColor="Black"/>
+        <StackLayout Orientation="Horizontal" Spacing="30" HorizontalOptions="CenterAndExpand">
+            <Entry x:Name="white" WidthRequest="100" Placeholder="M" Keyboard="Numeric"/>
+            <Entry x:Name="black" WidthRequest="100" Placeholder="N" Keyboard="Numeric"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+            <Label Text="Результат:" Margin="5"/>
+        </StackLayout>
+        <Label x:Name="Result" Margin="5" FontSize="Medium" TextColor="Black" HorizontalOptions="Center"/>
+        <Button Text="Найти количество минимальных путей" Margin="5" Clicked="ToFind" BackgroundColor="SlateBlue"/>
+        <Button Text="Очистить поля" Margin="5" Clicked="Clear" BackgroundColor="DarkOrchid"/>
+    </StackLayout>
+</ContentPage>

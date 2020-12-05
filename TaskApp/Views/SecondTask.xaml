@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TaskApp.Views.SecondTask"
+             Title="Task 2">
+    <StackLayout BackgroundColor="OldLace">
+        <Label Text="Введите числа M и N" FontSize="Medium" TextColor="Black"/>
+        <StackLayout Orientation="Horizontal" Spacing="30" HorizontalOptions="CenterAndExpand">
+            <Entry x:Name="wheel" WidthRequest="100" Placeholder="N" Keyboard="Numeric"/>
+            <Entry x:Name="tire" WidthRequest="100" Placeholder="M" Keyboard="Numeric"/>
+        </StackLayout>
+        <Editor x:Name="editor" Placeholder="Введите износ каждой шины(используйте Enter)" Keyboard="Default" HeightRequest="180"/>
+        <Label x:Name="Result" Margin="5" FontSize="Medium" TextColor="Black" HorizontalOptions="Center"/>
+        <Button Text="Найти максимальное число километров" Margin="5" Clicked="ToFindTheWay" BackgroundColor="SlateBlue"/>
+        <Button Text="Очистить поля" Margin="5" Clicked="Clear" BackgroundColor="DarkOrchid"/>
+    </StackLayout>
+</ContentPage>

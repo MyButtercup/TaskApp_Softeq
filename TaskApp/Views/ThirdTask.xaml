@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TaskApp.Views.ThirdTask"
+             Title="Task 3">
+    <StackLayout BackgroundColor="OldLace">
+        <Label Text="Даны различные натуральные числа А, В, N. Сумма нескольких чисел равна N, каждое из чисел равно А или B. Найти наибольшее возможное значение произведения этих чисел. Введите эти числа:" FontSize="Caption" TextColor="Black"/>
+        <StackLayout Orientation="Horizontal" Spacing="30" HorizontalOptions="CenterAndExpand">
+            <Entry x:Name="num1" WidthRequest="100" Placeholder="A" Keyboard="Numeric"/>
+            <Entry x:Name="num2" WidthRequest="100" Placeholder="B" Keyboard="Numeric"/>
+            <Entry x:Name="num3" WidthRequest="100" Placeholder="N" Keyboard="Numeric"/>
+        </StackLayout>
+        <Label x:Name="Result" Margin="5" FontSize="Medium" TextColor="Black" HorizontalOptions="Center"/>
+        <Button Text="Найти произведение" Margin="5" Clicked="Multiplication" BackgroundColor="SlateBlue"/>
+        <Button Text="Очистить поля" Margin="5" Clicked="Clear" BackgroundColor="DarkOrchid"/>
+    </StackLayout>
+</ContentPage>
